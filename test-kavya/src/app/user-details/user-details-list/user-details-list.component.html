@@ -1,0 +1,17 @@
+<div class="container pt-3">
+  <table style="width:100%">
+    <tr style="    background: #f9f8f8;border-bottom: 1px solid #e2e0e0;border-top: 1px solid #e2e0e0;">
+      <th>Name</th>
+      <th>Image</th>
+      <th>View Details</th>
+
+    </tr>
+    <tr *ngFor="let item of lstDetails">
+      <td>{{item.first_name}} {{item.last_name}}</td>
+      <td><img src="{{item.avatar}}" alt="{{item.first_name}}" class="image"></td>
+      <td><button (click)="viewDetails(item)" class="viewbtn">View</button></td>
+
+    </tr>
+
+  </table>
+</div>

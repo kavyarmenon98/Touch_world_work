@@ -1,0 +1,27 @@
+<div class="container pt-3">
+    <div class="row">
+        <div class="col-md-12 mb-2">
+                <h4>User Details</h4>
+        </div>
+        <div class="col-md-3">
+          <label>Name </label>
+        </div>
+        <div class="col-md-9">
+            <p>:&nbsp;{{ data['first_name'] }}  {{ data['last_name'] }}</p>
+        </div>
+        <div class="col-md-3">
+                <label>Email id</label>
+            </div>
+            <div class="col-md-9">
+                    <p>:&nbsp;{{ data['email'] }}</p>
+            </div>
+            <div class="col-md-3">
+                    <label>Image</label>
+                </div>
+                <div class="col-md-9">
+                        <p>&nbsp;<img src="{{data['avatar']}}" alt="{{data['first_name']}}"></p>
+                </div>
+   
+    
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="container pt-3">
+    <div class="row">
+        <input  placeholder="Random number Field" type="number"  [(ngModel)]="intRandomField" (ngModelChange)="changeValue()">
+    </div>
+    <div class="row" *ngFor="let item of lstItems">
+        <input type="number"  [(ngModel)]="item.value" >
+    </div>
+</div>
